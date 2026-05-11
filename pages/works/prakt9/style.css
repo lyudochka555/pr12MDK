@@ -1,0 +1,105 @@
+.line{
+    list-style: none;
+     li{
+        display:inline-block;
+        padding: 15px;
+        background: #ffbcf0; 
+        margin: 0 15px;
+    }      
+}
+.links{
+    
+    a{
+        text-decoration: none;
+        width: 10%;
+        display:block;
+        padding: 10px 20px;
+        background: #481ce9; 
+        margin: 6px 0;
+        color:rgb(255, 255, 255);
+    } 
+}
+.blocks{
+    list-style: none;
+    div{
+        display:inline;
+        padding: 15px;
+        background: #ff2a2a; 
+        margin: 0 15px;
+        line-height: 5;
+    } 
+    .non{
+        display: none; 
+        }
+}
+
+.links-markers a{
+    display: list-item;
+    padding: 10px;
+    width: 11%;
+    background: #000000;
+    color:rgb(255, 255, 255);
+    margin:10 0px;
+
+}
+.post1, .post2{
+    background-color: #9b1919;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.post1 .image {
+    background-image: url("img/1.jpg");
+    width: 80px; 
+    height: 80px;
+    float: left;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px dashed red;
+}
+    
+.post2 .image {
+    background: url("img/1.jpg"); 
+    width: 80px; 
+    height: 80px;
+    float: right;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px dashed red;
+}
+
+
+.table{
+    overflow: auto;
+    width: 450px;
+    text-align: center;
+}
+.cl{
+    width: 32%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.pog1 .cl{
+    float: left;
+    width: 30%;
+    margin-right: 2.5%;
+    padding: 5px 0;
+    background: #2baee2;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+.pog2 .cl{
+    float: left;
+    width: 33%;
+    background: #ffffff;
+    padding: 5px 0;
+    color: #000000;
+    
+}
+.pog3 .cl {
+    float: left;
+    background: #ffffff;
+    font-size: 20px;
+}

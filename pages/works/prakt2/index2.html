@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Данилова: ПР2 В2</title>
+    <link href="../../../../style/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>я, Данилва Людмила Николаевна, пытаюсь стать хорошим веб-разработчиком </h1>
+        <nav>
+            <ul>
+                <li><a href="../../work.html">Вернуться к списку моих работ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Практическая работа №2</h2>
+        <h3>Основы CSS</h3>
+        <p>CSS (Cascading Style Sheets) — язык таблиц стилей, который позволяет прикреплять стиль (например, шрифты и цвет) к структурированным документам (например, документам HTML и приложениям XML).</p>
+        <p>Обычно CSS-стили используются для создания и изменения стиля элементов веб-страниц и пользовательских интерфейсов, написанных на языках HTML и XHTML, но также могут быть применены к любому виду XML-документа, в том числе XML, SVG и XUL.</p>
+        <p>Отделяя стиль представления документов от содержимого документов, CSS упрощает создание веб-страниц и обслуживание сайтов.</p>
+        <p>CSS поддерживает таблицы стилей для конкретных носителей, поэтому авторы могут адаптировать представление своих документов к визуальным браузерам, слуховым устройствам, принтерам, брайлевским устройствам, карманным устройствам и т.д.</p>
+        <p>Каскадные таблицы стилей описывают правила форматирования элементов с помощью свойств и допустимых значений этих свойств. Для каждого элемента можно использовать ограниченный набор свойств, остальные свойства не будут оказывать на него никакого влияния.</p>
+        <p>Объявление стиля состоит из двух частей: селектора и объявления. В HTML имена элементов нечувствительны к регистру, поэтому «h1» работает так же, как и «H1». Объявление состоит из двух частей: имя свойства (например, color) и значение свойства (grey). Селектор сообщает браузеру, какой именно элемент форматировать, а в блоке объявления (код в фигурных скобках) перечисляются форматирующие команды — свойства и их значения.</p>
+        <img src="img/css_osnovy.png" alt="p1" width="500" height="200">
+        <p>Хотя приведенный пример пытается влиять только на пару свойств, необходимых для рендеринга HTML-документа, он сам по себе квалифицируется как таблица стилей. В сочетании с другими таблицами стилей (одна фундаментальная особенность CSS заключается в том, что таблицы стилей объединяются), правило будет определять окончательное представление документа.</p>
+        <h3>Виды каскадных таблиц стилей и их специфика</h3>
+        <section>
+            <article style="background-color: rgb(224, 208, 87); width:20%; padding: 5px;">
+                <h4>Содержание:</h4>
+                <ol type="1">
+                    <li><a href="#h1" style="color: darkgoldenrod;">Виды таблиц стилей <span style="background-color: chocolate;"></span></a>
+                        <ol start="1">
+                            <li><a href="#h2" style="color: darkgoldenrod;">Внешняя таблица стилей <span style="background-color: chocolate;"></span></a></li>
+                            <li><a href="#h3" style="color: darkgoldenrod;">Внутренние стили <span style="background-color: chocolate;"></span></a></li>
+                            <li><a href="#h4" style="color: darkgoldenrod;">Встроенные стили <span style="background-color: chocolate;"></span></a></li>
+                            <li><a href="#h5" style="color: darkgoldenrod;">Правило @import <span style="background-color: chocolate;"></span></a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#h6"style="color: darkgoldenrod;">Виды селекторов (базовые) <span style="background-color: chocolate;"></span></a>
+                        <ol start="1">
+                            <li><a href="#h7" style="color: darkgoldenrod;">Универсальный селектор <span style="background-color: chocolate;"></span></a></li>
+                            <li><a href="#h8" style="color: darkgoldenrod;">Селектор элемента (тега) <span style="background-color: chocolate;"></span></a></li>
+                            <li><a href="#h9" style="color: darkgoldenrod;">Селектор класса <span style="background-color: chocolate;"></span></a></li>
+                            <li><a href="#h10" style="color: darkgoldenrod;">Селектор идентификатора<span style="background-color: chocolate;"></span></a></li>
+                            <li><a href="#h11" style="color: darkgoldenrod;">Селектор потомка <span style="background-color: chocolate;"></span></a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#h12" style="color: darkgoldenrod;">Комбинация селекторов <span style="background-color: chocolate;"></span></a></li>
+                    <li><a href="#h13" style="color: darkgoldenrod;">Группировка селекторов <span style="background-color: chocolate;"></span></a></li>
+                    <li><a href="#h14" style="color: darkgoldenrod;">Наследование и каскад <span style="background-color: chocolate;"></span></a>
+                        <ol start="1">
+                            <li><a href="#h15" style="color: darkgoldenrod;">Наследование <span style="background-color: chocolate;"></span></a></li>
+                            <li><a href="#h16" style="color: darkgoldenrod;">Каскад <span style="background-color: chocolate;"></span></a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <h3 id="h1">Виды таблиц стилей</h3>
+        <h4 id="h2">Внешняя таблица стилей</h4>
+        <p>Внешняя таблица стилей представляет собой текстовый файл с расширением .css, в котором находится набор CSS-стилей элементов. Файл создаётся в редакторе кода, так же как и HTML-страница. Внутри файла могут содержатся только стили, без HTML-разметки. Внешняя таблица стилей подключается к веб-странице с помощью элемента <span style="background-color: rgb(193, 193, 193);"><kbd>&lt;link&gt;</kbd></span>, расположенного внутри раздела <span style="background-color: rgb(193, 193, 193);"><kbd>&lt;head&gt;</kbd><kbd>&lt;/head&gt;</kbd></span>. Такие стили работают для всех страниц сайта.</p>
+        <p>К каждой веб-странице можно присоединить несколько таблиц стилей, добавляя последовательно несколько элементов <span style="background-color: rgb(193, 193, 193);"><kbd>&lt;link&gt;</kbd></span> , указав в атрибуте media назначение данной таблицы стилей. <span style="background-color: rgb(193, 193, 193);"><kbd>rel="stylesheet"</kbd></span> указывает тип ссылки (ссылка на таблицу стилей).</p>
+        <img src="img/img1.png" alt="p2" >
+        <p>Атрибут <span style="background-color: rgb(193, 193, 193);"><kbd>type="text/css"</kbd></span> не является обязательным по стандарту HTML5, поэтому его можно не указывать. Если атрибут отсутствует, по умолчанию используется значение <span style="background-color: rgb(193, 193, 193);"><kbd>type="text/css"</kbd></span>.</p>
+        <h4 id="h3">Внутренние стили</h4>
+        <p>Внутренние стили встраиваются в раздел <span style="background-color: rgb(193, 193, 193);"><kbd>&lt;head&gt;</kbd><kbd>&lt;/head&gt;</kbd></span> HTML-документа и определяются внутри элемента <span style="background-color: rgb(193, 193, 193);"><kbd>&lt;style&gt;</kbd><kbd>&lt;/stylesheet&gt;</kbd></span>. Внутренние стили имеют приоритет над внешними, но уступают встроенным стилям (заданным через атрибут style).</p>        
+        <img src="img/img2.png" alt="p2" width="400" height="300">
+        <h4 id="h4">Встроенные стили</h4>
+        <p>Когда мы пишем встроенные стили, мы пишем CSS-код в HTML-файл, непосредственно внутри элемента с помощью атрибута style:</p>
+        <img src="img/img3.png" alt="p2" width="600" height="40">
+        <p>Такие стили действуют только на тот элемент, для которого они заданы.</p>
+        <h4 id="h5">Правило <span style="background-color: rgb(193, 193, 193);"><kbd>@import</kbd></span> </h4>
+        <p>Правило <span style="background-color: rgb(193, 193, 193);"><kbd>@import</kbd></span> позволяет загружать внешние таблицы стилей. Чтобы директива <span style="background-color: rgb(193, 193, 193);"><kbd>@import</kbd></span> работала, она должна располагаться в таблице стилей (внешней или внутренней) перед всеми остальными правилами:</p>
+        <img src="img/img4.png" alt="p2" width="300" height="200">
+
+        <h3 id="h6">Виды селекторов</h3>
+        <p>Селекторы представляют структуру веб-страницы. С их помощью создаются правила для форматирования элементов веб-страницы. Селекторами могут быть элементы, их классы и идентификаторы, а также псевдоклассы и псевдоэлементы.</p>
+        <h4 id="h7">Универсальный селектор</h4>
+        <p>Соответствует любому HTML-элементу. Например, <span style="background-color: rgb(193, 193, 193);"><kbd>* {margin: 0;}</kbd></span>  обнулит внешние отступы для всех элементов сайта. Также селектор может использоваться в комбинации с псевдоклассом или псевдоэлементом: <span style="background-color: rgb(193, 193, 193);"><kbd>*:after {CSS-стили}</kbd></span>,<span style="background-color: rgb(193, 193, 193);"><kbd>*:checked {CSS-стили}</kbd></span> .</p>
+        <h4 id="h8">Селектор элемента</h4>
+        <p>Селекторы элементов позволяют форматировать все элементы данного типа на всех страницах сайта. Например, <span style="background-color: rgb(193, 193, 193);"><kbd>h1 {font-family: Lobster, cursive;}</kbd></span>  задаст общий стиль форматирования всех заголовков <span style="background-color: rgb(193, 193, 193);"><kbd>h1</kbd></span> .</p>
+        <h4 id="h9">Селектор класса</h4>
+        <p>Селекторы класса позволяют задавать стили для одного и более элементов с одинаковым именем класса, размещенных в разных местах страницы или на разных страницах сайта. Например, для создания заголовка с классом <span style="background-color: rgb(193, 193, 193);"><kbd>headline</kbd></span> необходимо добавить атрибут <span style="background-color: rgb(193, 193, 193);"><kbd>class</kbd></span> со значением <span style="background-color: rgb(193, 193, 193);"><kbd>headline</kbd></span> в открывающий тег <span style="background-color: rgb(193, 193, 193);"><kbd>&lt;h1&gt;</kbd></span> и задать стиль для указанного класса. Стили, созданные с помощью класса, можно применять к другим элементам, не обязательно данного типа.</p>
+        <img src="img/img5.png" alt="p2" width="600" height="200">
+        <p>Если элемент имеет несколько атрибутов класса, их значения объединяются с пробелами <span style="background-color: rgb(193, 193, 193);"><kbd>&lt;h1 class="headline post-title"&gt;</kbd></span>.</p>
+        <h4 id="h10">Селектор идентификатора</h4>
+        <p>Селектор идентификатора позволяет форматировать один конкретный элемент. Значение id должно быть уникальным, на одной странице может встречаться только один раз и должно содержать хотя бы один символ. Значение не должно содержать пробелов.</p>
+        <p>Нет никаких других ограничений на то, какую форму может принимать id, в частности, идентификаторы могут состоять только из цифр, начинаться с цифры, начинаться с подчеркивания, состоять только из знаков препинания и т. д.</p>
+        <p>Уникальный идентификатор элемента может использоваться для различных целей, в частности, как способ ссылки на конкретные части документа с использованием идентификаторов фрагментов, как способ нацеливания на элемент при создании сценариев и как способ стилизации конкретного элемента из CSS.</p>
+        <img src="img/img6.png" alt="p2" width="300" height="200">
+        <h4 id="h11">Селектор потомка</h4>
+        <p>Селекторы потомков применяют стили к элементам, расположенным внутри элемента-контейнера. Например, <span style="background-color: rgb(193, 193, 193);"><kbd>ul li {text-transform: uppercase;}</kbd></span>  — выберет все элементы <span style="background-color: rgb(193, 193, 193);"><kbd>li</kbd></span>, являющиеся потомками всех элементов <span style="background-color: rgb(193, 193, 193);"><kbd>ul</kbd></span>.</p>
+        <p>Если нужно отформатировать потомки определенного элемента, этому элементу нужно задать стилевой класс:</p>
+        <ul type="disc">
+            <li><span style="background-color: rgb(193, 193, 193);"><kbd>p.first a {color: green;}</kbd></span> — данный стиль применится ко всем ссылкам, потомкам абзаца с классом <span style="background-color: rgb(193, 193, 193);"><kbd>first</kbd></span>;</li>
+            <li><span style="background-color: rgb(193, 193, 193);"><kbd>p .first a {color: green;}</kbd></span> — если добавить пробел, то будут стилизованы ссылки, расположенные внутри любого элемента класса .first, который является потомком элемента <span style="background-color: rgb(193, 193, 193);"><kbd>&lt;p&gt;</kbd></span>;</li>
+            <li><span style="background-color: rgb(193, 193, 193);"><kbd>.first a {color: green;}</kbd></span> — данный стиль применится к любой ссылке, расположенной внутри другого элемента, обозначенного классом <span style="background-color: rgb(193, 193, 193);"><kbd>.first</kbd></span>.</li>
+        </ul>
+        <h3 id="h12">Комбинация селекторов</h3>
+        <p>Для более точного отбора элементов для форматирования можно использовать комбинации селекторов:</p>
+        <ul type="disc">
+            <li><span style="background-color: rgb(193, 193, 193);"><kbd>a[href][title]</kbd></span> — выберет все ссылки, для которых заданы атрибуты <span style="background-color: rgb(193, 193, 193);"><kbd>href</kbd></span> и <span style="background-color: rgb(193, 193, 193);"><kbd>title</kbd></span>;</li>
+            <li><span style="background-color: rgb(193, 193, 193);"><kbd>mg[alt*="css"]:nth-of-type(even) i</kbd></span>— выберет все четные картинки, альтернативный текст которых содержит слово css.</li>
+        </ul>
+        <h3 id="h13">Группировка селекторов</h3>
+        <p>Один и тот же стиль можно одновременно применить к нескольким элементам. Для этого необходимо в левой части объявления перечислить через запятую нужные селекторы:</p>
+        <img src="img/img7.png" alt="p2" width="300" height="200">
+        
+        <h3 id="h14">Наследование и каскад</h3>
+        <p>Наследование и каскад — два фундаментальных понятия в CSS, которые тесно связаны между собой. Наследование заключается в том, что элементы наследуют свойства от своего родителя (элемента, их содержащего). Каскад проявляется в том, как разные виды таблиц стилей применяются к документу, и как конфликтующие правила переопределяют друг друга.</p>
+        <h4 id="h15">Наследование</h4>
+        <p>Наследование является механизмом, с помощью которого определенные свойства передаются от предка к его потомкам. Спецификацией CSS предусмотрено наследование свойств, относящихся к текстовому содержимому страницы, таких как ,<span style="background-color: rgb(193, 193, 193);"><kbd>font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space и word-spacing</kbd></span>. Во многих случаях это удобно, так как не нужно задавать размер шрифта и семейство шрифтов для каждого элемента веб-страницы..</p>
+        <p>Свойства, относящиеся к форматированию блоков, не наследуются. Это <span style="background-color: rgb(193, 193, 193);"><kbd>background, border, display, float и clear, height и width, margin, min-max-height и -width, outline, overflow, padding, position, text-decoration, vertical-align и z-index</kbd></span></p>
+        <h4 id="h16">Каскад</h4>
+        <p>Каскадирование — это механизм, который управляет конечным результатом в ситуации, когда к одному элементу применяются разные CSS-правила. Существует три критерия, которые определяют порядок применения свойств — правило <span style="background-color: rgb(193, 193, 193);"><kbd>!important</kbd></span>, специфичность и порядок, в котором подключены таблицы стилей.</p>
+        
+
+        <div class="top"><a href = "#top">Наверх</a></div>
+        <style>
+        .top{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(151, 230, 151, 0.3);
+            padding: 10px;
+        }
+        </style>
+    </main>
+    <footer>
+        Данилова Людмила Николаевна
+    </footer>
+</body>
+</html>

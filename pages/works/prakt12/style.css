@@ -1,0 +1,17 @@
+.ul{
+    list-style: none;
+    width: 10%;
+}
+.li{
+    display: block; 
+    padding: 10px;
+    background: #40227a;
+    margin-bottom: 4px;          
+}
+.a {
+    text-decoration: none;      
+    color: #ffffff;                                  
+}
+li{
+    padding: 4px;
+}

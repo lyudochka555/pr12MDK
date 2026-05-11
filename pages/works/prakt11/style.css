@@ -1,0 +1,192 @@
+header{
+    background: rgb(132, 182, 67);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo {
+    height: 100px;
+    width: 100px;
+    background: url("img/logo.jpeg");
+    background-size: cover;
+}
+header h1{
+    text-align: center;
+    line-height: 100px;
+    margin: 0;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    
+}
+header ul li a{
+    display: block;
+    background: rgb(132, 182, 67);
+    padding: 10px;
+    margin: 30px 10px 0;
+    text-decoration: none;
+    color:black;
+}
+.sort{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 2rem; 
+    color:black;
+}
+
+div a{
+    text-decoration: none;
+    color:black;
+}
+.po{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+section article{
+    width: 320px;
+    margin: 5px;
+    
+}
+article{
+    border: 2px solid rgb(196, 196, 196) ;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.categ{
+    display: inline-block;
+    margin: 10px 10px 0;
+    color:azure;
+}
+.sale {
+    background: rgb(45, 186, 230);
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(-50px) translateX(10px);
+
+}
+.img{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+    img{
+        max-width: 100%;
+        height: 140px;
+    }
+}
+
+.prod{
+padding: 1rem 1 rem 1.3rem;
+
+}
+.categ2{
+    display: inline-block;
+    margin: 10px 10px 0;
+    color:azure;
+}
+.sale2 {
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+.sale3 {
+    background: rgb(28, 173, 59);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+.price{
+    margin: 0.5rem 0;
+}
+.cpr{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+    
+}
+.cpr2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(40, 180, 52);
+}
+.olpr{
+    font-size: 1rem;
+    font-weight: 800;
+    color: black;
+    
+}
+.olpr2{
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(39, 214, 68);
+}
+.title{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0.3rem;
+    color: black;
+    line-height: 1.35;
+}
+.title2{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0.3rem;
+    color: rgb(172, 172, 172);
+    line-height: 1.35;
+}
+.title3{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0.3rem;
+    color: rgb(59, 196, 41);
+    line-height: 1.35;
+}
+.reit{
+    font-weight: 700;
+    font-size: 1rem;
+    color:rgb(255, 0, 0);
+    margin: 0.3rem 0;
+}
+span{
+        color:black ;
+        margin-left: 0.3rem;
+    }
+.prodA{
+    font-size: 0.9rem;
+    color:rgba(63, 63, 63, 0.849);
+    float: right;
+
+}
+.btn{
+    background: red;
+    border: none;
+    width: 30%;
+    height: 40px;
+   
+    border-radius: 15px;
+    color: white;
+    margin-top: 0.7rem;
+    font-size: 0.85rem;
+}
+footer{
+    background: rgb(132, 182, 67);
+    padding: 10px;
+    margin: 10px 0px;
+    
+}

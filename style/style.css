@@ -1,0 +1,87 @@
+.prew{
+    width: 210px;
+    height: 110px;
+}
+
+.new1{
+   background: url("../img/kotik.jpg"); 
+   background-size: cover;
+}
+
+.news2{
+   background: url("../img/ko.webp"); 
+   background-size: cover;
+}
+
+
+body{
+    background-color: rgb(218, 162, 255);
+}
+
+*{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+.ul{
+    list-style: none;
+}
+.li{
+    display:inline-block;
+    padding: 10px;
+    background: #40227a;          
+}
+.a {
+    text-decoration: none;      
+    color: #d9ccff;                                  
+}
+li{
+    padding: 4px;
+}
+
+.content{
+    display: flex;
+}
+
+main{
+    width: 70%;
+}
+aside{
+    width: 30%;
+}
+.m1{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+footer {
+    background: #3a2661;
+    color: #d9ccff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+.article {
+    background: white;
+    padding: 25px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    width: 90%;            
+    max-width: 800px;  
+    margin-top: 10px;    
+}
+.ull{
+    list-style: none
+}
