@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПР16</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <div class="app-container">
+    <section class="hero">
+        <h1 class="hero-title">Книжный Клуб</h1>
+        <p class="hero-slogan">Портал о литературе</p>
+        <div class="hero-quote">«Где живут истории, там начинается магия»</div>
+        <button class="btn-primary" >Открыть мир книг</button>
+    </section>
+
+
+    <div class="nav-section">
+        <ul class="nav-links">
+            <li><a href="#books">Книги</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#feedback">Отзывы</a></li>
+            <li><a href="#">🔍 Поиск</a></li>
+        </ul>
+    </div>
+
+    <section id="books" class="section">
+        <h2 class="section-title">Книжные новинки</h2>
+        <div class="books-grid">
+            <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(145deg, #c1a17b, #9c7a58);">📘</div>
+                <div class="book-info">
+                    <h4>Тени ушедших эпох</h4>
+                    <div class="book-author">Елена Воронцова</div>
+                    <div class="book-desc">Мистический роман о библиотеке забытых рукописей.</div>
+                    <span class="price-tag">590 ₽</span>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(145deg, #b79b7c, #946e4e);">📖</div>
+                <div class="book-info">
+                    <h4>Поэзия тишины</h4>
+                    <div class="book-author">Андрей Градов</div>
+                    <div class="book-desc">Сборник современных стихов о природе и чувствах.</div>
+                    <span class="price-tag">420 ₽</span>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(145deg, #bf9879, #9f7657);">🎧</div>
+                <div class="book-info">
+                    <h4>Аудиокурс «Литературный экспресс»</h4>
+                    <div class="book-author">Услуга: лекции о классике</div>
+                    <div class="book-desc">6 вебинаров + материалы, доступ к архиву.</div>
+                    <span class="price-tag">1 990 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">О нас</h2>
+        <div class="about-text">
+            <p>«Книжный Клуб» — это независимый портал для всех, кто живет литературой. Мы объединяем читателей, авторов и издателей с 2019 года. Наша миссия — сделать книги доступнее и вернуть искусство чтения в каждый дом.</p>
+            <p>Ежемесячно мы публикуем эксклюзивные рецензии, проводим литературные встречи и собираем виртуальные книжные клубы. Присоединяйтесь к сообществу!</p>
+            <div class="stats">
+                <div class="stat-item"><span class="stat-number">15k+</span><br>Читателей</div>
+                <div class="stat-item"><span class="stat-number">340+</span><br>Рецензий</div>
+                <div class="stat-item"><span class="stat-number">58</span><br>Авторов</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contact-flex">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <span>Пермь, ул. Книжная, 11, офис 555</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <span>+7 (495) 123-52-67</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <span>hello@bookportal.ru</span>
+                </div>
+            </div>
+            <div id="feedback" class="feedback-form">
+                <h3 style="font-size: 1.3rem; margin-bottom: 1rem; font-weight: 600;">Напишите нам</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text"  placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email"  placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="3"  placeholder="Ваш отзыв или вопрос о книгах..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Отправить</button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <a href="#">Главная</a>
+            <a href="#books">Каталог</a>
+            <a href="#about">О портале</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#">Блог</a>
+        </div>
+        <div class="search-area">
+            <input type="text" class="search-input" placeholder="Поиск книг, авторов...">
+            <button class="search-btn" >🔍 Поиск</button>
+        </div>
+        <div class="copyright">
+            © 2026 Книжный Портал | Вдохновение на каждой странице
+        </div>
+    </footer>
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,18 @@
+button{
+    padding: 1rem 2rem;
+    color: #fff;
+    border: none;
+    background: #00a7cf;
+    border-radius: бpx;
+    cursor: pointer;
+    
+   
+    text-align: center;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    
+}
+button:hover{
+  background: #006680;  
+}

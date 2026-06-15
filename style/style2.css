@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -85,31 +86,13 @@ main h2 {
     color: #0f766e;
     text-align: center;
 }
-.prew{
-    width: 210px;
-    height: 110px;
-}
 
-.new1{
-   background: url("../img/kotik.jpg"); 
-   background-size: cover;
-}
-
-.news2{
-   background: url("../img/ko.webp"); 
-   background-size: cover;
-}
-
-
-
-
-h2{
-    font-size: 20px;
-
-}
-
-h3{
-    font-size: 18px;
+main ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.2rem;
+    counter-reset: work-counter;
 }
 
 main li {
@@ -119,40 +102,37 @@ main li {
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border: 1px solid #cbd5e1;
-    padding: 1.2rem 1rem;
-    width: 120px;
-    
 }
 
 main li:hover {
-    transform: translateY(-2px) ;
+    transform: translateY(-5px) ;
     box-shadow: 0 20px 30px rgba(20, 184, 166, 0.2);
     border-color: #14b8a6;
-    
 }
 
 main li a {
     display: flex;
     align-items: center;
-    width: 50px;
+    padding: 1.2rem 1rem;
     text-decoration: none;
     color: #1e4a47;
     font-weight: 500;
     gap: 12px;
-    
 
 }
 
 main li a::before {
+    content: counter(work-counter);
+    counter-increment: work-counter;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15px;
-    height: 20px;
+    width: 42px;
+    height: 42px;
     background: #ccfbf1;
     color: #0d9488;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
 
 }
@@ -169,6 +149,8 @@ main li:hover a::before {
 }
 
 
+
+
 footer {
     text-align: center;
     padding: 2.5rem 2rem;
@@ -182,20 +164,77 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+footer::before {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.8rem;
+}
 
-
-.content{
-    display: flex;
+footer::after {
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.8rem;
+    opacity: 0.8;
+    letter-spacing: 3px;
 }
 
 
-.m1{
-    display: flex;
-    gap: 35px;
-    justify-content: center;
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.2rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header h1::before,
+    header h1::after {
+        font-size: 1.2rem;
+    }
+    
+    .ul {
+        gap: 0.5rem;
+    }
+    
+    .a {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    main {
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+    
+    main h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    main ol {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    main li a {
+        padding: 1rem;
+    }
+    
+    main li a::before {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+    
+    footer {
+        padding: 1.8rem 1rem;
+        font-size: 1rem;
+    }
+    
+    footer::before {
+        font-size: 1.5rem;
+    }
 }
 
-
-.ull{
-    list-style: none
-}
